@@ -121,8 +121,8 @@ nnoremap <silent> <leader>p  :<C-u>CocListResume<CR>
 " Explorer and files navigation
 nmap <leader>e :CocCommand explorer<CR>
 nmap <leader>f :CocCommand explorer --preset floating<CR>
-nmap <leader>p :GFiles<CR> 
-
+nmap <leader>p :GFiles<CR>
+nmap <leader>r :Rg <CR>
 " Vim-Commentry
 nnoremap <leader>/ :Commentary<CR>
 vnoremap <leader>/ :Commentary<CR>
