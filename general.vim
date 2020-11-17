@@ -6,9 +6,9 @@ set hidden                              " Required to keep multiple buffers open
 set encoding=utf-8                      " The encoding displayed
 set pumheight=10                        " Makes popup menu smaller
 set fileencoding=utf-8                  " The encoding written to file
-set ruler              					" Show the cursor position all the time
+set ruler								" Show the cursor position all the time
 set cmdheight=2                         " More space for displaying messages
-set iskeyword+=-                      	" treat dash separated words as a word text object"
+set iskeyword+=-						" treat dash separated words as a word text object"
 set mouse=a                             " Enable your mouse
 set splitbelow                          " Horizontal splits will automatically be below
 set splitright                          " Vertical splits will automatically be to the right
@@ -26,9 +26,9 @@ set updatetime=300                      " Faster completion
 set timeoutlen=500                      " By default timeoutlen is 1000 ms
 set formatoptions-=cro                  " Stop newline continution of comments
 set clipboard=unnamedplus               " Copy paste between vim and everything else
-set signcolumn=yes 						" always show signcolumns
-set shortmess+=c 						" don't give ins-completion-menu messages.
-set relativenumber 						" Show relativenumber
+set signcolumn=yes						" always show signcolumns
+set shortmess+=c						" don't give ins-completion-menu messages.
+set relativenumber						" Show relativenumber
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 
 " You can't stop me
@@ -40,6 +40,18 @@ let g:python3_host_prog='/usr/bin/python'
 " Theme scheme
 colorscheme gruvbox
 
-" Add status line support, for integration with other plugin, checkout `:h coc-status`
-set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+let g:lightline = {
+			\ 'colorscheme': 'wombat',
+			\ 'active': {
+			\   'left': [ [ 'mode', 'paste' ],
+			\             [ 'cocstatus', 'readonly', 'filename', 'fugitive', 'modified' ] ]
+			\ },
+			\ 'component_function': {
+			\   'cocstatus': 'coc#status',
+			\   'fugitive' : 'fugitive#statusline'
+			\ },
+			\ }
+
+" Use auocmd to force lightline update.
+autocmd User CocStatusChange,CocDiagnosticChange call lightline#update()
 
