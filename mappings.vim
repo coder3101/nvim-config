@@ -1,7 +1,3 @@
-" Better nav for omnicomplete
-inoremap <expr> <c-j> ("\<C-n>")
-inoremap <expr> <c-k> ("\<C-p>")
-
 " Use alt + hjkl to resize windows
 nnoremap <M-j>    :resize -2<CR>
 nnoremap <M-k>    :resize +2<CR>
@@ -20,10 +16,6 @@ nnoremap <TAB> :bnext<CR>
 " SHIFT-TAB will go back
 nnoremap <S-TAB> :bprevious<CR>
 
-" Alternate way to save
-nnoremap <C-s> :w<CR>
-" Alternate way to quit
-nnoremap <C-Q> :wq!<CR>
 " <TAB>: completion.
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 
@@ -37,6 +29,9 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+" Better line movements
+nnoremap gh ^
+nnoremap gl $
 
 " Use tab for trigger completion with characters ahead and navigate.
 " Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
@@ -73,17 +68,17 @@ inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 inoremap <silent><expr> <c-space> coc#refresh()
 
 " Use `[g` and `]g` to navigate diagnostics
-nmap <silent> [g <Plug>(coc-diagnostic-prev)
-nmap <silent> ]g <Plug>(coc-diagnostic-next)
+nmap <silent> <leader>n <Plug>(coc-diagnostic-prev)
+nmap <silent> <leader>N <Plug>(coc-diagnostic-next)
 
 " GoTo code navigation.
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
+nmap <silent> <leader>gd <Plug>(coc-definition)
+nmap <silent> <leader>gy <Plug>(coc-type-definition)
+nmap <silent> <leader>gi <Plug>(coc-implementation)
+nmap <silent> <leader>gr <Plug>(coc-references)
 
 " Use K to show documentation in preview window
-nnoremap <silent> K :call <SID>show_documentation()<CR>
+nnoremap <silent> <leader>k :call <SID>show_documentation()<CR>
 
 
 " Remap for rename current word
@@ -123,6 +118,7 @@ nmap <leader>e :CocCommand explorer<CR>
 nmap <leader>f :CocCommand explorer --preset floating<CR>
 nmap <leader>p :GFiles<CR>
 nmap <leader>r :Rg <CR>
+
 " Vim-Commentry
 nnoremap <leader>/ :Commentary<CR>
 vnoremap <leader>/ :Commentary<CR>
