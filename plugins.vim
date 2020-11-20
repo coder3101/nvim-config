@@ -18,6 +18,5 @@ Plug 'chiel92/vim-autoformat'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
-Plug 'jiangmiao/auto-pairs'
 
 call plug#end()

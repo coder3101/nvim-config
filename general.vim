@@ -19,6 +19,8 @@ set smarttab                            " Makes tabbing smarter will realize you
 set smartindent                         " Makes indenting smart
 set autoindent                          " Good auto indent
 set number                              " Line numbers
+set spell								" Set spell check
+set spelllang=en_us						" Use english language for spell check
 set background=dark                     " tell vim what the background color looks like
 set nobackup                            " This is recommended by coc
 set nowritebackup                       " This is recommended by coc
