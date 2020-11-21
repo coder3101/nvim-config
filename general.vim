@@ -43,18 +43,3 @@ let g:python3_host_prog='/usr/bin/python'
 colorscheme gruvbox
 set background=dark
 
-let g:lightline = {
-			\ 'colorscheme': 'wombat',
-			\ 'active': {
-			\   'left': [ [ 'mode', 'paste' ],
-			\             [ 'cocstatus', 'readonly', 'filename', 'fugitive', 'modified' ] ]
-			\ },
-			\ 'component_function': {
-			\   'cocstatus': 'coc#status',
-			\   'fugitive' : 'fugitive#statusline'
-			\ },
-			\ }
-
-" Use auocmd to force lightline update.
-autocmd User CocStatusChange,CocDiagnosticChange call lightline#update()
-
