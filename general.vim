@@ -32,6 +32,7 @@ set signcolumn=yes						" always show signcolumns
 set shortmess+=c						" don't give ins-completion-menu messages.
 set relativenumber						" Show relativenumber
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
+set diffopt+=vertical 					" Show vim diffs in vertical way.
 
 " You can't stop me
 cmap w!! w !sudo tee %

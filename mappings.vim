@@ -67,7 +67,7 @@ inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 " Use <c-space> to trigger completion.
 inoremap <silent><expr> <c-space> coc#refresh()
 
-" Use `[g` and `]g` to navigate diagnostics
+" Use `<leader>n` and `<leader>N` to navigate diagnostics
 nmap <silent> <leader>n <Plug>(coc-diagnostic-prev)
 nmap <silent> <leader>N <Plug>(coc-diagnostic-next)
 
@@ -125,6 +125,6 @@ vnoremap <leader>/ :Commentary<CR>
 
 " Fugitive remaps for conflict resolution and other stuff
 nmap <leader>gs :G <CR>
-nmap <leader>gf :diffget //3 <CR>
-nmap <leader>gj :diffget //2 <CR>
+nmap <leader>gf :diffget //2 <CR>
+nmap <leader>gj :diffget //3 <CR>
 
