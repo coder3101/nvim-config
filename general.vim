@@ -41,6 +41,7 @@ let g:python3_host_prog='/usr/bin/python'
 
 " Theme scheme
 colorscheme gruvbox
+set background=dark
 
 let g:lightline = {
 			\ 'colorscheme': 'wombat',

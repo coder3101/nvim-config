@@ -122,3 +122,9 @@ nmap <leader>r :Rg <CR>
 " Vim-Commentry
 nnoremap <leader>/ :Commentary<CR>
 vnoremap <leader>/ :Commentary<CR>
+
+" Fugitive remaps for conflict resolution and other stuff
+nmap <leader>gs :G <CR>
+nmap <leader>gf :diffget //3 <CR>
+nmap <leader>gj :diffget //2 <CR>
+
