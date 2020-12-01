@@ -12,6 +12,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'junegunn/fzf', {'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'morhetz/gruvbox'
+Plug 'airblade/vim-gitgutter'
+Plug 'lambdalisue/fern.vim'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
@@ -24,3 +26,5 @@ source $HOME/.config/nvim/general.vim
 source $HOME/.config/nvim/mappings.vim
 source $HOME/.config/nvim/colors.vim
 source $HOME/.config/nvim/nvim_lsp.vim
+source $HOME/.config/nvim/fern.vim
+
