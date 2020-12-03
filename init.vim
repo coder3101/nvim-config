@@ -26,5 +26,5 @@ source $HOME/.config/nvim/general.vim
 source $HOME/.config/nvim/mappings.vim
 source $HOME/.config/nvim/colors.vim
 source $HOME/.config/nvim/nvim_lsp.vim
-source $HOME/.config/nvim/fern.vim
+source $HOME/.config/nvim/nerdtree.vim
 
