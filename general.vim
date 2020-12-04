@@ -1,7 +1,7 @@
 syntax enable                           " Enables syntax highlighing
 set hidden                              " Required to keep multiple buffers open multiple buffers
 set encoding=utf-8                      " The encoding displayed
-set pumheight=10                        " Makes popup menu smaller
+set pumheight=15                        " Makes popup menu smaller
 set fileencoding=utf-8                  " The encoding written to file
 set ruler								" Show the cursor position all the time
 set cmdheight=2                         " More space for displaying messages
@@ -11,6 +11,7 @@ set splitbelow                          " Horizontal splits will automatically b
 set splitright                          " Vertical splits will automatically be to the right
 set conceallevel=0                      " So that I can see `` in markdown files
 set tabstop=4                           " Insert 4 spaces for a tab
+set expandtab                           " Expand tabs into spaces
 set shiftwidth=4                        " Change the number of space characters inserted for indentation
 set smarttab                            " Makes tabbing smarter will realize you have 2 vs 4
 set smartindent                         " Makes indenting smart
@@ -27,5 +28,3 @@ set shortmess+=c						" don't give ins-completion-menu messages.
 set relativenumber						" Show relativenumber
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 set diffopt+=vertical 					" Show vim diffs in vertical way.
-
-
