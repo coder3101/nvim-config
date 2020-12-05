@@ -36,6 +36,7 @@ nnoremap <C-l> <C-w>l
 
 " Explorer and files navigation
 nmap <leader>p :GFiles<CR>
+nmap <leader>P :Files<CR>
 nmap <leader>r :Rg <CR>
 
 " Vim-Commentry
