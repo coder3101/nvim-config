@@ -22,7 +22,7 @@ Plug 'nvim-lua/completion-nvim'
 
 call plug#end()
 
-source $HOME/.config/nvim/general.vim
+source $HOME/.config/nvim/sets.vim
 source $HOME/.config/nvim/mappings.vim
 source $HOME/.config/nvim/colors.vim
 source $HOME/.config/nvim/nvim_lsp.vim
