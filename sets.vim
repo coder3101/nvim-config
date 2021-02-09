@@ -29,3 +29,4 @@ set shortmess+=c			" don't give ins-completion-menu messages.
 set relativenumber			" Show relativenumber
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 set diffopt+=vertical 			" Show vim diffs in vertical way.
+set scrolloff=8                 " Always show 8 lines above and below cursor, if possible while scrolling
