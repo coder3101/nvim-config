@@ -34,11 +34,6 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-" Explorer and files navigation
-nmap <leader>p :GFiles<CR>
-nmap <leader>P :Files<CR>
-nmap <leader>r :Rg <CR>
-
 " Vim-Commentry
 nnoremap <leader>/ :Commentary<CR>
 vnoremap <leader>/ :Commentary<CR>
@@ -48,3 +43,9 @@ nmap <leader>gs :G <CR>
 nmap <leader>gf :diffget //2 <CR>
 nmap <leader>gj :diffget //3 <CR>
 
+" Telescope remaps
+" nnoremap <leader>ps :lua require('telescope.builtin').grep_string({search = vim.fn.input("Grep for Project") })<CR>
+nnoremap <C-p> :lua require('telescope.builtin').git_files()<CR>
+" nnoremap <leader>pf :lua require('telescope.builtin').find_files()<CR>
+" nnoremap <leader>pw :lua require('telescope.builtin').grep_string({search = vim.fn.expand("<cword>") })<CR>
+" nnoremap <leader>pb :lua require('telescope.builtin').buffers()<CR>

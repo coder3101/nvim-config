@@ -9,8 +9,6 @@ endif
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'vim-airline/vim-airline'
-Plug 'junegunn/fzf', {'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
 Plug 'morhetz/gruvbox'
 Plug 'airblade/vim-gitgutter'
 Plug 'preservim/nerdtree'
@@ -20,11 +18,17 @@ Plug 'tpope/vim-fugitive'
 Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lua/completion-nvim'
 
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope-fzy-native.nvim'
+Plug 'kyazdani42/nvim-web-devicons'
+
 call plug#end()
 
 source $HOME/.config/nvim/sets.vim
 source $HOME/.config/nvim/mappings.vim
 source $HOME/.config/nvim/colors.vim
-source $HOME/.config/nvim/nvim_lsp.vim
+source $HOME/.config/nvim/lsp.vim
+source $HOME/.config/nvim/telescope.vim
 source $HOME/.config/nvim/nerdtree.vim
-
