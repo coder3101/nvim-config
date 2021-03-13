@@ -1,11 +1,12 @@
 " Theme scheme
 
-let g:gruvbox_contrast_dark = 'hard'
-if(exists('+termguicolors'))
-	let &t_8f = "\<ESC>[38;2;%lu;%lu;%lum"
-	let &t_8b = "\<ESC>[48;2;%lu;%lu;%lum"
+if has('termguicolors')
+    set termguicolors
+    let &t_8f = "\<ESC>[38;2;%lu;%lu;%lum"
+    let &t_8b = "\<ESC>[48;2;%lu;%lu;%lum"
 endif
-let g:gruvbox_invert_selections = '0'
-set termguicolors
-colorscheme gruvbox
+
 set background=dark
+let g:gruvbox_material_background = 'hard'
+let g:airline_theme = 'gruvbox_material'
+colorscheme gruvbox-material
