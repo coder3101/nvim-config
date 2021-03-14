@@ -32,8 +32,8 @@ Plug 'kyazdani42/nvim-web-devicons'
 call plug#end()
 
 source $HOME/.config/nvim/sets.vim
-source $HOME/.config/nvim/mappings.vim
 source $HOME/.config/nvim/colors.vim
+source $HOME/.config/nvim/mappings.vim
 source $HOME/.config/nvim/lsp.vim
 source $HOME/.config/nvim/telescope.vim
 source $HOME/.config/nvim/nerdtree.vim
