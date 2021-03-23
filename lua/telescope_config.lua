@@ -47,13 +47,19 @@ require('telescope').setup{
     -- Developer configurations: Not meant for general override
     buffer_previewer_maker = require('telescope.previewers').buffer_previewer_maker,
 
+    mappings = {
+        i = {
+                ["C-x"] = false,
+                ["C-q"] = actions.send_to_qflist,
+            },
+        }  
+    },
     extensions = {
         fzy_native = {
             override_generic_sorter = false,
             override_file_sorter = true,
         }
     }
-  }
 }
 
 require('telescope').load_extension('fzy_native')
