@@ -37,4 +37,3 @@ source $HOME/.config/nvim/mappings.vim
 source $HOME/.config/nvim/lsp.vim
 source $HOME/.config/nvim/telescope.vim
 source $HOME/.config/nvim/nerdtree.vim
-source $HOME/.config/nvim/treesitter.vim
