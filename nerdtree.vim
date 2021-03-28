@@ -5,4 +5,3 @@ let NERDTreeMapActivateNode = 'l'
 
 " close directory with h, cursor must be under node
 let NERDTreeMapCloseDir = 'h'
-
