@@ -29,6 +29,10 @@ vnoremap < <gv
 vnoremap > >gv
 
 " Better window navigation
+tnoremap <C-h> <C-\><C-N><C-w>h
+tnoremap <C-j> <C-\><C-N><C-w>j
+tnoremap <C-k> <C-\><C-N><C-w>k
+tnoremap <C-l> <C-\><C-N><C-w>l
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
@@ -47,4 +51,6 @@ nmap <leader>gj :diffget //3 <CR>
 nnoremap <leader>j :cn <CR>
 nnoremap <leader>k :cp <CR>
 
-
+" Neovim terminal shortcuts
+nnoremap <leader>t :terminal <CR>
+tnoremap jj <C-\><C-N>
