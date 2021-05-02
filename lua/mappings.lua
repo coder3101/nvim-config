@@ -40,6 +40,8 @@ nnoremap("<leader>gj", ":diffget //3<CR>")
 nnoremap("<leader>/", ":Commentary<CR>")
 nnoremap("<leader>o", "o<Esc>0_D")
 nnoremap("<leader>O", "O<Esc>0_D")
+nnoremap("<leader>u", ":UndotreeToggle<CR>")
+
 -- Insert mode remap
 inoremap("jj", "<Esc>")
 inoremap("<C-u>", "<Esc>viwUi")

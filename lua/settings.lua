@@ -2,6 +2,23 @@ local cmd = vim.api.nvim_command
 
 cmd("syntax enable")
 
+-- Buffer level settings
+vim.bo.fileencoding = "utf-8"
+vim.bo.undofile = true
+vim.bo.tabstop = 4
+vim.bo.expandtab = true
+vim.bo.shiftwidth = 4
+vim.bo.smartindent = true
+vim.bo.autoindent = true
+
+-- Window level settings
+vim.wo.conceallevel = 0
+vim.wo.number = true
+vim.wo.signcolumn = "yes"
+vim.wo.relativenumber = true
+vim.wo.wrap = false
+cmd("set iskeyword+=-")
+
 -- Global Settings
 vim.o.hidden = true
 vim.o.hlsearch = false
@@ -18,20 +35,7 @@ vim.o.updatetime = 300
 vim.o.timeoutlen = 500
 vim.o.clipboard = "unnamedplus"
 vim.o.scrolloff = 8
+
+-- Repeated configs, will have to wait till https://github.com/neovim/neovim/pull/13479 to be merged
+vim.o.undofile = true -- repeated, you already have it set vim.bo.undofile
 cmd("set diffopt+=vertical")
-
--- Buffer level settings
-vim.bo.fileencoding = "utf-8"
-vim.bo.tabstop = 4
-vim.bo.expandtab = true
-vim.bo.shiftwidth = 4
-vim.bo.smartindent = true
-vim.bo.autoindent = true
-cmd("set iskeyword+=-")
-
--- Window level settings
-vim.wo.conceallevel = 0
-vim.wo.number = true
-vim.wo.signcolumn = "yes"
-vim.wo.relativenumber = true
-vim.wo.wrap = false

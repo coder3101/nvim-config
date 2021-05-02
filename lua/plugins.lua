@@ -10,6 +10,7 @@ return require('packer').startup(function(use)
     use 'sainnhe/gruvbox-material'
     use 'airblade/vim-gitgutter'
     use 'preservim/nerdtree'
+    use 'mbbill/undotree'
 
     -- its tpope!
     use 'tpope/vim-commentary'
