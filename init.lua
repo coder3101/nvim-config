@@ -18,6 +18,7 @@ require("mappings")
 
 require("nerdtree")
 require("treesitter")
+require("undotree")
 require("tscope")
 require("airline")
 require("lsp")
