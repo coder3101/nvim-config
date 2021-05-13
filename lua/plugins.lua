@@ -9,7 +9,7 @@ return require('packer').startup(function(use)
     use 'vim-airline/vim-airline'
     use 'sainnhe/gruvbox-material'
     use 'airblade/vim-gitgutter'
-    -- use 'preservim/nerdtree'
+    use 'preservim/nerdtree'
     use 'mbbill/undotree'
 
     -- its tpope!
@@ -26,8 +26,6 @@ return require('packer').startup(function(use)
     use 'nvim-lua/plenary.nvim'
     use 'nvim-telescope/telescope.nvim'
     use 'nvim-telescope/telescope-fzy-native.nvim'
-
     use 'kyazdani42/nvim-web-devicons'
-    use 'kyazdani42/nvim-tree.lua'
 
 end)

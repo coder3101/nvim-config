@@ -16,7 +16,7 @@ require("settings")
 require("colorschemes")
 require("mappings")
 
-require("nvimtree")
+require("nerdtree")
 require("treesitter")
 require("undotree")
 require("tscope")
