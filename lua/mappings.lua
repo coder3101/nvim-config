@@ -56,5 +56,5 @@ tnoremap("<C-l>","<C-\\><C-N><C-w>l")
 -- Visual Mode remaps
 vnoremap("<leader>/", ":Commentary<CR>")
 vnoremap("<", "<gv")
-vnoremap("<", ">gv")
+vnoremap(">", ">gv")
 
