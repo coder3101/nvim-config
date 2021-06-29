@@ -2,40 +2,32 @@ local cmd = vim.api.nvim_command
 
 cmd("syntax enable")
 
--- Buffer level settings
-vim.bo.fileencoding = "utf-8"
-vim.bo.undofile = true
-vim.bo.tabstop = 4
-vim.bo.expandtab = true
-vim.bo.shiftwidth = 4
-vim.bo.smartindent = true
-vim.bo.autoindent = true
-
--- Window level settings
-vim.wo.conceallevel = 0
-vim.wo.number = true
-vim.wo.signcolumn = "yes"
-vim.wo.relativenumber = true
-vim.wo.wrap = false
-cmd("set iskeyword+=-")
-
--- Global Settings
-vim.o.hidden = true
-vim.o.hlsearch = false
-vim.o.pumheight = 15
-vim.o.ruler = true
-vim.o.cmdheight = 2
-vim.o.mouse = "a"
-vim.o.splitbelow = true
-vim.o.splitright = true
-vim.o.smarttab = true
-vim.o.backup = false
-vim.o.writebackup = false
-vim.o.updatetime = 300
-vim.o.timeoutlen = 500
-vim.o.clipboard = "unnamedplus"
-vim.o.scrolloff = 8
-
--- Repeated configs, will have to wait till https://github.com/neovim/neovim/pull/13479 to be merged
-vim.o.undofile = true -- repeated, you already have it set vim.bo.undofile
-cmd("set diffopt+=vertical")
+vim.opt.fileencoding = "utf-8"
+vim.opt.undofile = true
+vim.opt.tabstop = 4
+vim.opt.expandtab = true
+vim.opt.shiftwidth = 4
+vim.opt.smartindent = true
+vim.opt.autoindent = true
+vim.opt.conceallevel = 0
+vim.opt.number = true
+vim.opt.signcolumn = "yes"
+vim.opt.relativenumber = true
+vim.opt.wrap = false
+vim.opt.iskeyword:append "-"
+vim.opt.hidden = true
+vim.opt.hlsearch = false
+vim.opt.pumheight = 15
+vim.opt.ruler = true
+vim.opt.cmdheight = 2
+vim.opt.mouse = "a"
+vim.opt.splitbelow = true
+vim.opt.splitright = true
+vim.opt.smarttab = true
+vim.opt.backup = false
+vim.opt.writebackup = false
+vim.opt.updatetime = 300
+vim.opt.timeoutlen = 500
+vim.opt.clipboard = "unnamedplus"
+vim.opt.scrolloff = 8
+vim.opt.diffopt:append "vertical"
