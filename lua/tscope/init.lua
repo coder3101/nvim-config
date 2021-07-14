@@ -18,8 +18,6 @@ require('telescope').setup{
     sorting_strategy = "descending",
     layout_strategy = "horizontal",
     layout_config = {
-      width = 0.75,
-      height = 1,
       prompt_position = "bottom",
       preview_cutoff = 120,
       horizontal = {
@@ -32,7 +30,7 @@ require('telescope').setup{
     file_sorter =  require('telescope.sorters').get_fzy_sorter,
     file_ignore_patterns = {},
     generic_sorter =  require('telescope.sorters').get_generic_fuzzy_sorter,
-    path_display = { "shorten", "absolute" },
+    path_display = {},
     winblend = 0,
     border = {},
     borderchars = { '─', '│', '─', '│', '╭', '╮', '╯', '╰' },
